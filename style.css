@@ -1081,6 +1081,11 @@ h3:before{
     text-decoration: none;
 }
 
+#n_bottom a{
+    color: black;
+    text-decoration: none;
+}
+
 #n_bottom ul{
     list-style: none;
     margin-left: -30px;
