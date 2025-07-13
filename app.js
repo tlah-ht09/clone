@@ -35,7 +35,8 @@ const et_sub=document.querySelectorAll(".et_sub a")
 
 const nc_hover=document.getElementById("nc_hover")
 
-const bp_sort=document.querySelectorAll("#bp_sort li ")
+const bp_sort=document.querySelectorAll("#bp_sort li")
+const bp_sort2=document.querySelectorAll("#bp_sort li a")
 
 
 menu_items.forEach(function(item) {
@@ -195,6 +196,8 @@ link_t.forEach(function(item){
     item.addEventListener("mouseover",function(){
         console.log('lasdhfjkhsdf')
         item.style.color='#C40F39'
+        
+
     })
 
     item.addEventListener("mouseout",function(){

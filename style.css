@@ -880,12 +880,17 @@ h3:before{
     width: 155px;
     height: 32px;
     border: 2px #bcbcbc solid;
-    color: #898989;
+    color: #c40f39 !important;
     border-radius: 50px;
 
     margin-right: 5px;
 
     min-width: 155px;
+}
+
+#bp_s_o{
+    color:#bcbcbc;
+    text-decoration: none;
 }
 
 #bp_list{
