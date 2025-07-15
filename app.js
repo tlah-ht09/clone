@@ -236,17 +236,21 @@ nc_hover.addEventListener("click",function(){
     menu_bar.style.opacity="1"
 })
 
+
+
 bp_sort.forEach(function(item){
     item.addEventListener("mouseover",function(){
         item.style.border="2px #c40f39 solid"
         item.style.color="#c40f39"
+    
     })
 
     item.addEventListener("mouseout",function(){
         item.style.border="2px #bcbcbc solid"
-        item.style.color="#898989"
+        item.style.color="#bcbcbc"
     })
 })
+
 
 
 /**
@@ -368,4 +372,55 @@ store.addEventListener("mouseover",function(){
 store.addEventListener("mouseout",function(){
     store.style.background="none"
     store.style.color="#c40f39"
+})
+
+
+const final=document.getElementById("final")
+const ff=document.getElementById("ff")
+
+var is_click=false
+
+ff.addEventListener("click",function(){
+    if (!is_click){
+    
+        final.style.transform="translateY(0)"
+        ff.style.borderTop="none"
+        is_click=true
+    }
+
+    else if (is_click){
+        final.style.transform="translateY(299px)"
+        ff.style.borderTop="1px rgba(66, 66, 66, 0.797) solid"
+        is_click=false
+    }
+})
+
+
+const personal=document.getElementById("personal_b")
+const email=document.getElementById("email_b")
+
+const personal_modal=document.getElementById("personal")
+const email_modal=document.getElementById("email")
+const all_modal=document.getElementById("modal")
+
+const closes=document.getElementsByClassName("close")
+
+personal.addEventListener("click",function(){
+    console.log('인식')
+    all_modal.style.display="block"
+    personal_modal.style.display="block"
+})
+
+email.addEventListener("click",function(){
+    all_modal.style.display="block"
+    email_modal.style.display="block"
+})
+
+Array.from(closes).forEach(function(item){
+    item.addEventListener("click",function(){
+        all_modal.style.display="none"
+        personal_modal.style.display="none"
+        email_modal.style.display="none"
+    })
+
 })
