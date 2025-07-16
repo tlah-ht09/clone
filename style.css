@@ -1026,6 +1026,7 @@ h3:before{
 
     width: 540px;
     height: 100%;
+    min-width: 540px;
 
     border-right: 1px solid #ddd;
 }
@@ -1128,6 +1129,7 @@ h3:before{
     text-align: center;
     width: 390px;
     border-right: 1px solid #ddd;
+    min-width: 380px;
 }
 
 #inquiry h2{
@@ -1178,6 +1180,7 @@ h3:before{
     text-align: center;
     width: 400px;
     border-right: 1px solid #ddd;
+    min-width: 390px;
 }
 
 #store h2{
