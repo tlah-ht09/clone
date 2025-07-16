@@ -36,7 +36,7 @@ const et_sub=document.querySelectorAll(".et_sub a")
 const nc_hover=document.getElementById("nc_hover")
 
 const bp_sort=document.querySelectorAll("#bp_sort li")
-const bp_sort2=document.querySelectorAll("#bp_sort li a")
+
 
 
 menu_items.forEach(function(item) {
@@ -423,4 +423,9 @@ Array.from(closes).forEach(function(item){
         email_modal.style.display="none"
     })
 
+})
+
+
+Array.from(bp_sort).forEach(function(){
+    window.scrollTo(0,1850);
 })
