@@ -426,6 +426,10 @@ Array.from(closes).forEach(function(item){
 })
 
 
-Array.from(bp_sort).forEach(function(){
-    window.scrollTo(0,1850);
+Array.from(bp_sort).forEach(function(item){
+    item.addEventListener("click",function(e){
+        window.scrollTo(0,1850);
+        console.log("sad");
+    })
+    
 })
